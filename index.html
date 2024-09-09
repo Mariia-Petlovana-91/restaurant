@@ -5,124 +5,624 @@
     <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <section class="heroHead"></section>
+	<div class="container">
+
+		<!-- HEADER SECTION -->
+		<header class="head">
+			<div class="mob__el">
+				<svg class="logo">
+					<use href="./src/images/sprite.svg#icon-logo-desk"></use>
+				</svg>
+				<button class="mob__btn" type="button" data-mob-open>
+					<svg class="svg">
+						<use href="./src/images/sprite.svg#icon-menu-mob"></use>
+					</svg>
+				</button>
+			</div>
+
+			<!-- MOBILE VERSION NAVIGATION -->
+			<div class="mob__menu is-hidden">
+				<button class="mob__btn mob__btn--close" type="button" data-mob-close>
+					<svg class="svg">
+						<use href="./src/images/sprite.svg#icon-close-menu"></use>
+					</svg>
+				</button>
+				<nav class="mob-nav">
+					<ul class="mob-nav__list">
+						<li class="mob-nav__item">
+							<a class="mob-nav__link" href="#hero">Main</a>
+						</li>
+						<li class="mob-nav__item">
+							<a class="mob-nav__link" href="#menu">Menu</a>
+						</li>
+						<li class="mob-nav__item">
+							<a class="mob-nav__link" href="#history">About</a>
+						</li>
+						<li class="mob-nav__item">
+							<a class="mob-nav__link" href="#">Reserve</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contact">
+					<a class="contact__link" href="tel:+234567890">+234567890</a>
+					<p class="contact__text">Contact us to reserve a table</p>
+				</div>
+				<button class="btn" type="button">ORDER A TABLE</button>
+			</div>
 
 
+			<!-- DESCTOP VERSION NAVIGATION -->
+			<div class="desktop__menu">
+				<nav class="desktop-nav">
+					<ul class="desktop-nav__list">
+						<li class="desktop-nav__item">
+							<a class="desktop-nav__link" href="#hero">Main</a>
+						</li>
+						<li class="desktop-nav__item">
+							<a class="desktop-nav__link" href="#menu">Menu</a>
+						</li>
+						<li class="desktop-nav__item">
+							<a class="desktop-nav__link" href="#history">About</a>
+						</li>
+						<li class="desktop-nav__item gg">
+							<a class="desktop-nav__link" href="#">Reserve</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contact">
+					<a class="contact__link" href="tel:+234567890">
+						<svg class="contact__svg">
+							<use href="./src/images/sprite.svg#icon-phone"></use>
+						</svg>
+						+234567890</a>
+					<p class="contact__text">Contact us to reserve a table</p>
+				</div>
+				<button class="btn" type="button">ORDER A TABLE</button>
+			</div>
+		</header>
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
+      
+<section id="hero" class="hero">
+	<p class="hero__text">Welcome to <br>
+		<span class="hero__text--el">Our restaurant </span>
+
+	</p>
+	<h1 class="hero__title">HOME OF BETTER FOOD</h1>
+	<a class="btn btn--menu" href="#menu">MENU</a>
 </section>
+</div>
+</section>
+      <section class="principle"></section>
+	<div class="container">
+		<ul class="principle__list">
+			<li class="principle__item">
+				<svg class="principle__svg">
+					<use href="./src/images/sprite.svg#icon-food"></use>
+				</svg>
+				<h3 class="principle__title">Magical
+					<span class="principle__el"> Atmosphere</span>
+				</h3>
+				<p class="principle__text">
+					Lorem ipsum dolor sit amet consectetur adipisicing qwertyuiouq elit.
+					Aspernatur nihil accusamus deserunt molestias impedit.
+				</p>
+			</li>
+			<li class="principle__item">
+				<svg class=" principle__svg">
+					<use href="./src/images/sprite.svg#icon-food"></use>
+				</svg>
+				<h3 class="principle__title">The best quality of
+					<span class="principle__el">Food</span>
+				</h3>
+				<p class="principle__text">
+					Lorem ipsum dolor sit amet qwertyuiok consectetur adipisicing elit.
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
+				</p>
+			</li>
+			<li class="principle__item">
+				<svg class="principle__svg">
+					<use href="./src/images/sprite.svg#icon-food"></use>
+				</svg>
+				<h3 class="principle__title">Сheap
+					<span class="principle__el">Food</span>
+				</h3>
+				<p class="principle__text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Aspernatur nihil qwertyuio accusamus deserunt molestias impedit.
+				</p>
+			</li>
+		</ul>
+	</div>
+</section>
+      <section id="history" class="history"></section>
+	<div class="container history__el">
+		<div class="history__el--first">
+			<h2 class="title">Our
+				<span class="title__el">History</span>
+			</h2>
+			<p class="history__text">
+				Lorem ipsum, dolor sit amet consectetur adipisicing
+				elit. Dicta blanditiis animi odio est natus aliquid
+				voluptate laudantium. Repellat, dicta in ea maiores
+				expedita adipisci deserunt. Porro iusto, necessitatibus
+				odio iste deleniti atque natus laborum quae, consectetur
+				culpa enim eum ipsa earum illo dolores voluptatibus?
+				Ipsam ipsa quibusdam reiciendis cumque maiores in ab quos,
+				optio delectus quidem. Accusamus minus et itaque.
+			</p>
+			<ul class="history__list">
+				<li class="history__item">
+					<p class="history__descrip">
+						<span class="history__number">93</span>
+						Drinks
+					</p>
+				</li>
+				<li class="history__item">
+					<p class="history__descrip">
+						<span class="history__number">206</span>
+						Food
+					</p>
+				</li>
+				<li class="history__item">
+					<p class="history__descrip">
+						<span class="history__number">71</span>
+						Appetizer
+					</p>
+				</li>
+			</ul>
+		</div>
+		<ul class="history__imgList">
+			<li class="history__imgItem history__imgItem1">
+				<picture>
 
+					<source media="(min-width:1080px)" srcset="./src/images/slide/first-slide-desk.jpg, ./src/images/slide/first-slide-desk@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:1080px)" srcset="./src/images/slide/first-slide-desk.webp, ./src/images/slide/first-slide-desk@2x.webp 2x" type="image/webp">
+
+					<source media="(min-width:280px)" srcset="./src/images/slide/first-slide-mob.jpg, ./src/images/slide/first-slide-mob@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:280px)" srcset="./src/images/slide/first-slide-mob.webp, ./src/images/slide/first-slide-mob@2x.webp 2x" type="image/webp">
+
+					<img src="#" alt="interior of the restaurant,
+                          							photos of tables on the background of windows with flower pots">
+				</picture>
+			</li>
+			<li class="history__imgItem history__imgItem2">
+				<picture>
+
+					<source media="(min-width:1080px)" srcset="./src/images/slide/slide-two-desk.jpg, ./src/images/slide/slide-two-desk@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:1080px)" srcset="./src/images/slide/slide-two-desk.webp, ./src/images/slide/slide-two-desk@2x.webp 2x" type="image/webp">
+
+					<source media="(min-width:280px)" srcset="./src/images/slide/slide-two-mob.jpg, ./src/images/slide/slide-two-mob@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:280px)" srcset="./src/images/slide/slide-two-desk.webp, ./src/images/slide/slide-two-mob@2x.webp 2x" type="image/webp">
+
+					<img src="#" alt="photo of a piece of green cake">
+				</picture>
+			</li>
+			<li class="history__imgItem history__imgItem3">
+				<picture>
+
+					<source media="(min-width:1080px)" srcset="./src/images/slide/slide-three-desk.jpg, ./src/images/slide/slide-three-desk@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:1080px)" srcset="./src/images/slide/slide-two-desk.webp, ./src/images/slide/slide-two-mob@2x.webp 2x" type="image/webp">
+
+					<source media="(min-width:280px)" srcset="./src/images/slide/slide-three-mob.jpg, ./src/images/slide/slide-three-mob@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:280px)" srcset="./src/images/slide/slide-three-desk.webp, ./src/images/slide/slide-three-mob@2x.webp 2x" type="image/webp">
+
+					<img src="#" alt="interior of the restaurant,
+                          							photos of tables on the background of windows with flower pots">
+				</picture>
+			</li>
+		</ul>
+	</div>
+</section>
+      <section class="order">
+	<div>
+		<h3 class="order__title">Celebrate in one of the best restaurants</h3>
+		<p class="order__text">This month only, business lunch is $40</p>
+	</div>
+	<button class="btn order__btn" type="button">ORDER A TABLE</button>
+</section>
+      <section class="dishes"></section>
+	<div class="container">
+		<h2 class="title">Our<span class="title__el"> Dishes</span></h2>
+		<div class="dishes__posititon">
+			<picture class="dishes__img">
+
+				<source media="(min-width:1080px)" srcset="./src/images/ourDishes/pizza-desk.jpg, ./src/images/ourDishes/pizza-desk@2x.jpg 2x" type="image/jpg">
+				<source media="(min-width:1080px)" srcset="./src/images/ourDishes/pizza-desk.webp, ./src/images/ourDishes/pizza-desk@2x.webp 2x" type="image/webp">
+
+				<source media="(min-width:280px)" srcset="./src/images/ourDishes/pizza-mob.jpg, ./src/images/ourDishes/pizza-mob@2x.jpg 2x" type="image/jpg">
+				<source media="(min-width:280px)" srcset="./src/images/ourDishes/pizza-mob.webp, ./src/images/ourDishes/pizza-mob@2x.webp 2x" type="image/webp">
+
+				<img src="#" alt="photo pizza">
+			</picture>
+			<ul class="dishes__ilst">
+				<li class="dishes__item">
+					<a class="dishes__link" href="#">
+						<picture>
+
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.jpg, ./src/images/ourDishes/hamburger-desk@2x.jpg 2x" type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.webp, ./src/images/ourDishes/hamburger-desk@2x.webp 2x" type="image/webp">
+
+							<source media="(min-width:280px)" srcset="./src/images/ourDishes/hamburger-mob.jpg, ./src/images/ourDishes/hamburger-mob@2x.jpg 2x" type="image/jpg">
+							<source media="(min-width:280px)" srcset="./src/images/ourDishes/hamburger-mob.webp, ./src/images/ourDishes/hamburger-mob@2x.webp 2x" type="image/webp">
+
+							<img src="#" alt="photo hamburger">
+						</picture>
+						<p class="dishes__text">
+							Hamburger mini
+							<span class="dishes__el">
+								<span class="dishes__decor">----------</span>
+								2.20$
+							</span>
+						</p>
+					</a>
+				</li>
+				<li class="dishes__item">
+					<a class="dishes__link" href="#">
+						<picture>
+
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.jpg, ./src/images/ourDishes/hamburger-desk@2x.jpg 2x" type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.webp, ./src/images/ourDishes/hamburger-desk@2x.webp 2x" type="image/webp">
+
+							<source media="(min-width:280px)" srcset="./src/images/ourDishes/hamburger-mob.jpg, ./src/images/ourDishes/hamburger-mob@2x.jpg 2x" type="image/jpg">
+							<source media="(min-width:280px)" srcset="./src/images/ourDishes/hamburger-mob.webp, ./src/images/ourDishes/hamburger-mob@2x.webp 2x" type="image/webp">
+
+							<img src="#" alt="photo hamburger">
+						</picture>
+						<p class="dishes__text">
+							Hamburger mini
+							<span class="dishes__el">
+								<span class="dishes__decor">----------</span>
+								2.20$
+							</span>
+						</p>
+					</a>
+				</li>
+				<li class="dishes__item">
+					<a class="dishes__link" href="#">
+						<picture>
+
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.jpg, ./src/images/ourDishes/hamburger-desk@2x.jpg 2x" type="image/jpg">
+							<source media="(min-width:1080px)" srcset="./src/images/ourDishes/hamburger-desk.webp, ./src/images/ourDishes/hamburger-desk@2x.webp 2x" type="image/webp">
+
+							<source media="(min-width:280px)" srcset="./src/images/ourDishes/hamburger-mob.jpg, ./src/images/ourDishes/hamburger-mob@2x.jpg 2x" type="image/jpg">
+							<source media="(min-width:280px)" srcset="./src/images/ourDishes/hamburger-mob.webp, ./src/images/ourDishes/hamburger-mob@2x.webp 2x" type="image/webp">
+
+							<img src="#" alt="photo hamburger">
+						</picture>
+						<p class="dishes__text">
+							Hamburger mini
+							<span class="dishes__el">
+								<span class="dishes__decor">----------</span>
+								2.20$
+							</span>
+						</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+      <section id="menu" class="menu"></section>
+	<div class="container">
+		<h2 class="title menu__title">Our menu</h2>
+		<ul class="menu__list">
+			<li class="menu__item">
+				<p class="menu__rec">RECOMMENDED</p>
+				<img class="menu__img" src="./src/images/menu/menu.jpg" alt="photo burger">
+				<p class="menu__price">$22</p>
+				<h3 class="menu__title--third">Hamburger mix</h3>
+				<p class="menu__descript">The thickest layer of meat</p>
+				<button class="btn menu__btn" type="button">ORDER</button>
+			</li>
+			<li class="menu__item menu__item--desk">
+				<img class="menu__img" src="./src/images/menu/menu.jpg" alt="photo burger">
+				<p class="menu__price">$22</p>
+				<h3 class="menu__title--third">Hamburger mix</h3>
+				<p class="menu__descript">The thickest layer of meat</p>
+				<button class="btn menu__btn" type="button">ORDER</button>
+			</li>
+			<li class="menu__item menu__item--desk">
+				<img class="menu__img" src="./src/images/menu/menu.jpg" alt="photo burger">
+				<p class="menu__price">$22</p>
+				<h3 class="menu__title--third">Hamburger mix</h3>
+				<p class="menu__descript">The thickest layer of meat</p>
+				<button class="btn menu__btn" type="button">ORDER</button>
+			</li>
+		</ul>
+	</div>
+</section>
+      <section class="reviews"></section>
+	<div class="container">
+		<ul class="reviews__list">
+			<li class="reviews__item">
+				<p class="reviews__text">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, reiciendis odit
+					blanditiis sint similique
+					est nesciunt incidunt alias odio animi doloremque pariatur iste esse corrupti? Omnis, sit
+					magni quidem quia ad
+					quas quo accusamus praesentium rerum, consectetur corrupti eaque consequatur.
+				</p>
+				<img class="reviews__img" src="./src/images/reviews/reviews.jpg" alt="photo visitor">
+				<h3 class="reviews__title">Visitor</h3>
+				<p class="reviews__name">Jozef</p>
+			</li>
+			<li class="reviews__item">
+				<p class="reviews__text">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, reiciendis odit
+					blanditiis sint similique
+					est nesciunt incidunt alias odio animi doloremque pariatur iste esse corrupti? Omnis, sit
+					magni quidem quia ad
+					quas quo accusamus praesentium rerum, consectetur corrupti eaque consequatur.
+				</p>
+				<img class="reviews__img" src="./src/images/reviews/reviews.jpg" alt="photo visitor">
+				<h3 class="reviews__title">Visitor</h3>
+				<p class="reviews__name">Jozef</p>
+			</li>
+			<li class="reviews__item">
+				<p class="reviews__text">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, reiciendis odit
+					blanditiis sint similique
+					est nesciunt incidunt alias odio animi doloremque pariatur iste esse corrupti? Omnis, sit
+					magni quidem quia ad
+					quas quo accusamus praesentium rerum, consectetur corrupti eaque consequatur.
+				</p>
+				<img class="reviews__img" src="./src/images/reviews/reviews.jpg" alt="photo visitor">
+				<h3 class="reviews__title">Visitor</h3>
+				<p class="reviews__name">Jozef</p>
+			</li>
+		</ul>
+		<button class="btn reviews__btn" type="button">LEAVE A COMMENT</button>
+	</div>
+</section>
+      <section class="gallery">
+	<div class="container">
+		<h2 class="title">A gallery <span class="title__el">of dishes</span></h2>
+		<ul class="gallery__list">
+			<li class="gallery__item">
+				<a class="gallery__link" href="#">
+					<picture>
+
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/wine-desk.jpg, ./src/images/foodGallery/wine-desk@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/wine-desk.webp, ./src/images/foodGallery/wine-desk@2x.webp 2x" type="image/webp">
+
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/wine-mob.jpg, ./src/images/foodGallery/wine-mob@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/wine-mob.webp, ./src/images/foodGallery/wine-mob@2x.webp 2x" type="image/webp">
+
+						<img src="#" alt="photo glass">
+					</picture>
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a class="gallery__link" href="#">
+					<picture>
+
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/coffee-desk.jpg, ./src/images/foodGallery/coffee-desk@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/coffee-desk.webp, ./src/images/foodGallery/coffee-desk@2x.webp 2x" type="image/webp">
+
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/coffee-mob.jpg, ./src/images/foodGallery/coffee-mob@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/coffee-mob.webp, ./src/images/foodGallery/coffee-mob@2x.webp 2x" type="image/webp">
+
+						<img src="#" alt="photo coffe">
+					</picture>
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a class="gallery__link" href="#">
+					<picture>
+
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/goulash-desk.jpg, ./src/images/foodGallery/goulash-desk@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/goulash-desk.webp, ./src/images/foodGallery/goulash-desk@2x.webp 2x" type="image/webp">
+
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/goulash-mob.jpg, ./src/images/foodGallery/goulash-mob@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/goulash-mob.webp, ./src/images/foodGallery/goulash-desk@2x.webp 2x" type="image/webp">
+
+						<img src="#" alt="photo goulash">
+					</picture>
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a class="gallery__link" href="#">
+					<picture>
+
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/coffee-desk.jpg, ./src/images/foodGallery/coffee-desk@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/coffee-desk.webp, ./src/images/foodGallery/coffee-desk@2x.webp 2x" type="image/webp">
+
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/coffee-mob.jpg, ./src/images/foodGallery/coffee-mob@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/coffee-mob.webp, ./src/images/foodGallery/coffee-mob@2x.webp 2x" type="image/webp">
+
+						<img src="#" alt="photo coffe">
+					</picture>
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a class="gallery__link" href="#">
+					<picture>
+
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/goulash-desk.jpg, ./src/images/foodGallery/goulash-desk@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/goulash-desk.webp, ./src/images/foodGallery/goulash-desk@2x.webp 2x" type="image/webp">
+
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/goulash-mob.jpg, ./src/images/foodGallery/goulash-mob@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/goulash-mob.webp, ./src/images/foodGallery/goulash-desk@2x.webp 2x" type="image/webp">
+
+						<img src="#" alt="photo goulash">
+					</picture>
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a class="gallery__link" href="#">
+					<picture>
+
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/wine-desk.jpg, ./src/images/foodGallery/wine-desk@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:1080px)" srcset="./src/images/foodGallery/wine-desk.webp, ./src/images/foodGallery/wine-desk@2x.webp 2x" type="image/webp">
+
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/wine-mob.jpg, ./src/images/foodGallery/wine-mob@2x.jpg 2x" type="image/jpg">
+						<source media="(min-width:280px)" srcset="./src/images/foodGallery/wine-mob.webp, ./src/images/foodGallery/wine-mob@2x.webp 2x" type="image/webp">
+
+						<img src="#" alt="photo glass">
+					</picture>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+      <section class="cooks">
+	<div class="container">
+		<h2 class="title">Our <span class="title__el">Cooks</span></h2>
+		<ul class="grid">
+			<li class="grid__item">
+				<picture>
+
+					<source media="(min-width:1080px)" srcset=".src/images/ourCooks/cook-one-desk.jpg, .src/images/ourCooks/cook-one-desk@2x.jpg 2x" type="image/type">
+					<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-one-desk.webp, ./src/images/ourCooks/cook-one-desk@2x.webp 2x" type="image/webp">
+
+					<source media="(min-width:280px)" srcset="./src/images/ourCooks/cook-one-mob.jpg, ./src/images/ourCooks/cook-one-mob@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:280px)" srcset="./src/images/ourCooks/cook-one-mob.webp, ./src/images/ourCooks/cook-one-mob@2x.webp 2x" type="image/webp">
+
+					<img src="#" alt="photo cook">
+				</picture>
+			</li>
+			<li class="grid__item">
+				<picture>
+
+					<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-two-desk.jpg, ./src/images/ourCooks/cook-two-desk@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-two-desk.webp, ./src/images/ourCooks/cook-two-desk@2x.webp 2x" type="image/webp">
+
+					<source media="(min-width:280px)" srcset="./src/images/ourCooks/cook-two-mob.jpg, ./src/images/ourCooks/cook-two-mob@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:280px)" srcset="./src/images/ourCooks/cook-two-mob.webp, ./src/images/ourCooks/cook-two-mob@2x.webp 2x" type="image/webp">
+
+					<img src="#" alt="photo cook">
+				</picture>
+			</li>
+			<li class="grid__item">
+				<picture>
+
+					<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-three-desk.jpg, ./src/images/ourCooks/cook-three-desk@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:1080px)" srcset="./src/images/ourCooks/cook-three-desk.webp, ./src/images/ourCooks/cook-three-desk@2x.webp 2x" type="image/webp">
+
+					<source media="(min-width:280px)" srcset="./src/images/ourCooks/cook-three-mob.jpg, ./src/images/ourCooks/cook-three-mob@2x.jpg 2x" type="image/jpg">
+					<source media="(min-width:280px)" srcset="./src/images/ourCooks/cook-three-mob.webp, ./src/images/ourCooks/cook-three-mob@2x.webp 2x" type="image/webp">
+
+					<img src="#" alt="photo cook">
+				</picture>
+			</li>
+		</ul>
+	</div>
+</section>
     </main>
+    <footer class="footer"></footer>
+	<div class="container">
+		<ul class="footer__list">
+			<li class="footer__item">
+				<a class="footer__link" href="tel:+234567890">
+					<svg class="svg footer__svg">
+						<use href="./src/images/sprite.svg#icon-phone"></use>
+					</svg>
+					+234567890
+				</a>
+			</li>
+			<li class="footer__item">
+				<a class="footer__link" href="mailto:bestFood@gmail.com">
+					<svg class="svg footer__svg">
+						<use href="./src/images/sprite.svg#icon-mail"></use>
+					</svg>
+					bestFood@gmail.com
+				</a>
+			</li>
+			<li class="footer__item">
+				<a class="footer__link" href="https://maps.app.goo.gl/QyBEgmS41iu6qihe8">
+					<svg class="svg footer__svg">
+						<use href="./src/images/sprite.svg#icon-location"></use>
+					</svg>
+					Our address
+				</a>
+			</li>
+		</ul>
+		<div class="footer__buttons">
+			<button class="btn footer__btn" type="button">LEAVE A COMMENT</button>
+			<button class="btn footer__btn" type="button" data-modal-open>ORDER A TABLE</button>
+		</div>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
+	</div>
 </footer>
+    <div class="backdrop container is-hidden">
+	<div class="modal">
+		<button class="madal__btn" type="button">
+			<svg class="svg">
+				<use href="./src/images/sprite.svg#icon-close-menu"></use>
+			</svg>
+		</button>
+		<form class="form" name="revievs">
 
+			<div class="form__el--rev">
+				<input class="form__input form__input--rev" autofocus type="text" name="name"
+					pattern="[A-Za-zА-Яа-я ]{100}+" title="Petro Petrenko" placeholder="Input your name">
 
+				<button class="form__btn--rev" type="button">ADD PHOTO</button>
+			</div>
+			<label class="form__label">
+				<span class="form__label--elRev">
+					<svg class="svg">
+						<use href="./src/images/sprite.svg#icon-comment"></use>
+					</svg>
+					Leave your reviews:
+				</span>
+				<textarea class="form__comment" name="comment" placeholder="Enter text"></textarea>
+			</label>
+			<button class="btn" type="submit">SEND</button>
+		</form>
+	</div>
+</div>
+    <div class="backdrop container is-hidden js-modal-order"></div>
+	<div class="modal ">
+		<button class="madal__btn js-close-modal-order" type="button">
+			<svg class="svg">
+				<use href="./src/images/sprite.svg#icon-close-menu"></use>
+			</svg>
+		</button>
+		<!-- FORM -->
+		<form class="form" action="www.bestFoog.com" name="order">
+			<h1 class="form__title">Leave your contacts and we will call you back</h1>
+			<span class="form__box">
+				<svg class="svg form__svg">
+					<use href="./src/images/sprite.svg#icon-name"></use>
+				</svg>
+				<input class="input form__input" autofocus type="text" name="user-name"
+					pattern="[A-Za-zА-Яа-я ]{100}+" title="Petro Petrenko">
+
+			</span>
+			<span class="form__box">
+				<svg class="svg form__svg">
+					<use href="./src/images/sprite.svg#icon-phone"></use>
+				</svg>
+				<input class="input form__input" type="tel" name="phone"
+					pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-099-00-99">
+			</span>
+			<span class="form__box">
+				<svg class="svg form__svg">
+					<use href="./src/images/sprite.svg#icon-mail"></use>
+				</svg>
+				<input class="input form__input" type="email" name="email" pattern="/^[]+@]+\.[]$/i"
+					title="petrenko12p@gmail.com">
+			</span>
+			</label>
+			<label class="form__label">
+				Сomment:
+				<textarea class="form__comment" name="comment" placeholder="Enter text"></textarea>
+			</label>
+			<!-- CHECKBOX -->
+			<label class="form__label--chek">
+				<input class="form__input--chek" type="checkbox">
+				<span class="form__text">I agree with the mailing and accept it</span>
+				<a class="form__link" href="#">conditions of the contract</a>
+			</label>
+			<button class="btn" type="submit">SEND</button>
+		</form>
+	</div>
+</div>
   </body>
 </html>

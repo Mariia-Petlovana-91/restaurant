@@ -1,0 +1,99 @@
+.footer{
+      margin-bottom: 60px;
+	padding: 50px 40px 50px 40px;
+
+	background-image: linear-gradient(
+		rgba(47, 48, 58, 0.4),
+		rgba(47, 48, 58, 0.4)
+	    ),
+	url(../images/footer/bg-footer-mob.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 768px;
+
+	  @media screen and (min-device-pixel-ratio: 2),
+	    (-webkit-min-device-pixel-ratio: 2),
+	    (min-resolution: 192dpi),
+	    (min-resolution: 2dppx)
+	     {
+	    background-image: linear-gradient(
+		rgba(47, 48, 58, 0.4),
+		rgba(47, 48, 58, 0.4)
+	    ),
+	    url(../images/footer/bg-footer-mob@2x.jpg);
+	  }
+
+	  @media screen and (min-width: 768px) {
+		background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		    ),
+		url(../images/footer/bg-footer-desk.jpg);
+            max-width: 1440px;
+
+		@media screen and (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx)
+		 {
+	      background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		    ),
+		url(../images/footer/bg-footer-desk@2x.jpg);
+	    }
+	  }
+}
+
+.footer__list{
+margin-bottom: 30px;
+
+// DESCTOP
+@media screen and (min-width:768px) {
+	display: flex;
+	justify-content: space-between;
+}
+}
+
+.footer__item{
+      text-align: center;
+      &:not(:last-child){
+      margin-bottom: 20px;
+    }
+
+// DESCTOP
+      @media screen and (min-width:768px) {
+
+	      &:not(:last-child){
+			margin-bottom: 20px;
+		    }
+    }
+}
+
+.footer__link{
+	@include font (15px, 800, var(--white));
+
+	&:hover, &:focus{
+		color: var(--accent);
+	}
+}
+
+.footer__svg{
+	fill: var(--white);
+}
+
+.footer__link:hover .footer__svg,
+.footer__link:focus .footer__svg{
+	fill: var(--accent);
+}
+
+.footer__btn{
+	margin: 0px auto 20px auto;
+}
+
+.footer__buttons{
+	@media screen and (min-width:768px) {
+		@include flex (flex, center, space-between);
+	}
+}

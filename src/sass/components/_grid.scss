@@ -1,0 +1,18 @@
+.grid{
+	display: grid;
+	grid-template-columns:repeat( auto-fit, minmax(290px 1fr))  ;
+	gap: 15px;
+	margin: 0 auto;
+  
+	@media screen and (min-width:768px) {
+	  grid-template-columns:repeat( auto-fit, minmax(350px, 1fr))
+	}
+  }
+  
+  .grid__item{
+  margin: auto;
+  min-width: 290px;
+  @media screen and (min-width:1080px) {
+	  min-width: 350px;
+  }
+  }

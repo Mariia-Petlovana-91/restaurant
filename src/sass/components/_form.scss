@@ -1,0 +1,97 @@
+.form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form__title{
+	margin-bottom: 15px;
+	text-align: center;
+
+	@include font (25px, 400, var(--textColor));
+}
+
+.form__box{
+      display: inline-block;
+	margin-bottom: 20px;
+      position: relative;
+}
+
+.form__input{
+	box-sizing: border-box;
+	padding: 5px;
+	outline: none;
+	border:1px solid var(--btnColor);
+	border-radius: 25px;
+	cursor: pointer;
+
+	@include font (17px, 400, var(--textColor));
+
+    &:hover,
+    &:focus {
+	border-color: var(--accent);
+    }
+}
+
+.form__svg{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+
+.form__label{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	color: var(--btnColor);
+	padding: 10px;
+}
+
+.form__comment{
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 10px;
+	outline: none;
+	border:1px solid var(--btnColor);
+	border-radius: 10px;
+	cursor: pointer;
+
+	@include font (15px, 400, var(--textColor));
+
+	&:hover,
+	&:focus {
+	  border-color: var(--accent);
+	}
+}
+
+.form__label--chek{
+margin-bottom: 20px;
+display: flex;
+}
+
+input[type='checkbox'] {
+	accent-color: var(--btnColor);
+}
+
+.form__input--chek{
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.form__text{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.form__text, .form__link{
+	@include font (12px, 400, var(--textColor));
+}
+
+.form__link{
+	color: var(--btnColor);
+
+	&:hover, &:focus{
+		color: var(--accent);
+	}
+}

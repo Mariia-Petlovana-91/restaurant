@@ -1,0 +1,54 @@
+.heroHead{
+	margin-bottom: 1150px;
+
+	@media screen and (min-width:290px){
+		margin-bottom: 700px;
+	}
+
+
+	@media screen and (min-width:390px){
+		margin-bottom: 700px;
+	}
+	background-image: url(../images/hero/hero-mob.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 768px;
+
+	  @media screen and (min-device-pixel-ratio: 2),
+	    (-webkit-min-device-pixel-ratio: 2),
+	    (min-resolution: 192dpi),
+	    (min-resolution: 2dppx)
+	     {
+	    background-image: url(../images/hero/hero-mob@2x.jpg);
+	  }
+
+	  @media screen and (min-width: 768px) {
+		margin-bottom: 250px;
+		background-image: url(../images/hero/hero-desk.jpg);
+            max-width: 1440px;
+
+		@media screen and (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx)
+		 {
+	      background-image: url(../images/hero/hero-desk@2x.jpg);
+	    }
+	  }
+}
+
+.head{
+	padding: 20px 15px 20px 15px;
+	margin-bottom: 400px;
+
+	@media screen and (min-width: 768px) {
+		display:flex;
+	}
+}
+
+
+
+
+
+

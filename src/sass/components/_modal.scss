@@ -1,0 +1,20 @@
+.modal{
+	max-width: 450px;
+	width: 100%;
+	
+	position: absolute;
+	top: 50%;
+	left:50%;
+      transform: translate(-50%, -50%);
+	padding: 40px 40px 20px 40px;
+
+	background-color: var(--white);
+	border: 2px solid var(--btnColor);
+	border-radius: 25px;
+}
+
+.madal__btn{
+	position: absolute;
+	top: 5%;
+	right: 3%;
+}

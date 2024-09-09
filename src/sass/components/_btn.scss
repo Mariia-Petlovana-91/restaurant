@@ -1,0 +1,11 @@
+.btn{
+	@include font(14px,700,var(--white));
+	background-color: var(--btnColor);
+      padding: 8px 26px 8px 26px;
+	border-radius: 2px;
+	&:hover, &:focus{
+		background-color: var(--accent);
+	}
+
+}
+

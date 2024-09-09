@@ -1,0 +1,42 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+  
+}
+
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+

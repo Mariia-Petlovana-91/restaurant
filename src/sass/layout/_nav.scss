@@ -1,0 +1,128 @@
+  .mob__menu{
+      background-color:var(--sectionBg);
+	padding: 20px 30px 20px 30px;
+
+	@extend %flex ;
+	flex-direction: column;
+   }
+   
+   .mob__menu, .mob__btn{
+	@media screen and (min-width: 768px) {
+	    display: none;
+	}
+    }
+
+    .mob__el{
+	@extend %flex;
+      margin-right: auto;
+    }
+
+    .mob__btn--close{
+	margin-left: auto;
+    }
+
+    .mob-nav__item{
+		margin-bottom: 20px;
+    }
+
+    .mob-nav__link{
+	@include font (20px, 700, var(--white));
+	width: 100%;
+
+	&:hover, &:focus {
+		color: var(--accent);
+	}
+    }
+
+    .desktop__menu{
+	// MOBILE
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	// DESCTOP
+	display:flex;
+	align-items: center;
+    }
+
+    .desktop-nav{
+
+	// DESKTOP
+	    display: flex;
+	    flex-direction: row;
+	    margin-right: 40px;    
+    }
+    
+    .desktop-nav__list{
+	    position: relative;
+	    @include flex (flex, center, space-between);
+
+	    &::after {
+		content: '';
+		width: 1px;
+		height: 40px;
+		background-color: var(--white);
+		position: absolute;
+	      left: 231px;
+		display: block;
+	}
+    }
+    
+    .desktop-nav__item{
+	&:not(:last-child){
+		margin-right: 15px;
+	}
+
+    }
+    
+    .desktop-nav__link{
+	    color: var(--white);
+	    width: 100%;
+    }
+    
+    .contact{
+	// MOBILE
+      margin-bottom: 20px;
+      display: flex;
+      
+	// DESKTOP
+	@media screen and (min-width: 768px) {
+		margin-bottom: 0px;
+		margin-right: 40px;
+		flex-direction: column;
+
+	}
+        
+	 
+    }
+    
+    .contact__svg{
+	    width: 23px;
+	    height: 23px;
+	    fill: var(--white);
+	    display: inline;
+    }
+    
+    .contact__link{
+	    color: var(--white);
+
+	    &:hover, &:focus{
+		color: var(--accent);
+	    }
+
+	// MOBILE
+	    @media screen and (max-width:768px) {
+		 margin-right: 10px;
+	    }
+    }
+    
+    .contact__link:hover .contact__svg,
+    .contact__link:focus .contact__svg{
+	fill: var(--accent);
+    }
+
+    .contact__text{
+	    color: var(--white);
+	    
+    }
+    

@@ -1,0 +1,122 @@
+.menu{
+      margin-bottom: 60px;
+	padding: 40px 40px 120px 40px;
+
+	background-image: url(../images/menu/bg-mob.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 768px;
+
+	  @media screen and (min-device-pixel-ratio: 2),
+	    (-webkit-min-device-pixel-ratio: 2),
+	    (min-resolution: 192dpi),
+	    (min-resolution: 2dppx)
+	     {
+	    background-image: url(../images/menu/bg-mob@2x.jpg);
+	  }
+
+	  @media screen and (min-width: 768px) {
+		background-image: url(../images/menu/bg-desk.jpg);
+            max-width: 1440px;
+
+		@media screen and (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx)
+		 {
+	      background-image: url(../images/menu/bg-desk@2x.jpg);
+	    }
+	  }
+}
+
+.menu__title{
+	color: var(--white);
+}
+
+.menu__list{
+	display: flex;
+	justify-content: center;
+}
+
+.menu__item{
+	position: relative;
+	background-color: var(--white);
+	padding: 50px 30px 20px 30px;
+	
+	//DESCTOP
+
+	@media screen and (min-width:768px) {
+		&:not(:last-child){
+			margin-right: 25px;
+		}
+	}
+}
+
+.menu__rec{
+	position: absolute;
+	background-color: var(--accent);
+	@include font (14px, 400, var(--black));
+	padding: 6px 10px 6px 10px;
+	top: 0;
+	left: 0;
+}
+
+
+.menu__item--desk{
+	@media screen and (max-width:767px) {
+		display: none;
+	}
+}
+
+.menu__img{
+	display: block;
+	border-radius: 50%;
+	margin-bottom: 20px;
+
+}
+
+.menu__price{
+	font-family: cursive;
+	@include font (30px, 400, var(--white));
+	background-color: var(--accent);
+	width: 80px;
+	height: 80px;
+	@extend %flex;
+	border: 5px solid var(--white);
+	border-radius: 50%;
+      position: absolute;
+	right: 10%;
+	top: 30%;
+
+	@media screen and (min-width:345px) {
+		right: 8%;
+		top: 40%;
+	}
+}
+
+.menu__title--third{
+
+	@include font (26px, 400, var(--black));
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+
+.menu__descript{
+
+	@include font (16px, 400, var(--black));
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.menu__btn{
+       margin: auto ;
+	background-color: var(--accent);
+      box-shadow: 4px 3px 3px rgba(187, 186, 186, 0.5);
+	&:hover, &:focus{
+		background-color: var(--btnColor);
+		box-shadow: none;
+	}
+}
+

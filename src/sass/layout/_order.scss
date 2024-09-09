@@ -1,0 +1,71 @@
+.order{
+      margin-bottom: 60px;
+	padding: 100px 20px 100px 20px;
+
+	background-image: linear-gradient(
+		rgba(47, 48, 58, 0.4),
+		rgba(47, 48, 58, 0.4)
+	    ), url(../images/order/bg-order-mob.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 768px;
+
+	  @media screen and (min-device-pixel-ratio: 2),
+	    (-webkit-min-device-pixel-ratio: 2),
+	    (min-resolution: 192dpi),
+	    (min-resolution: 2dppx)
+	     {
+	    background-image: linear-gradient(
+		rgba(47, 48, 58, 0.4),
+		rgba(47, 48, 58, 0.4)
+	    ), url(../images/order/bg-order-mob@2x.jpg);
+	  }
+        
+	//   DESCTOP
+	  @media screen and (min-width: 768px) {
+            display: flex;
+		align-items: center;
+
+		background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		    ), url(../images/order/bg-order-desk.jpg);
+            max-width: 1440px;
+
+		@media screen and (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx)
+		 {
+	      background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		    ), url(../images/order/bg-order-desk@2x.jpg);
+	    }
+	  }
+}
+
+.order__title{
+	text-align: center;
+	margin-bottom: 20px;
+	@include font (30px, 400, var(--accent));
+
+	@media screen and (min-width:768px) {
+		font-size: 52px;
+	}
+}
+
+.order__text{
+	text-align: center;
+	margin-bottom: 30px;
+	@include font (24px, 800, var(--white));
+
+	@media screen and (min-width:768px) {
+		margin-bottom: 0px;
+	}
+}
+
+.order__btn{
+	margin: auto;
+}

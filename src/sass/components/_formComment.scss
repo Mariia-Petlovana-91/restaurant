@@ -1,0 +1,45 @@
+.form__el--rev{
+	
+	@extend %flex;
+	flex-direction: column;
+      margin-bottom: 20px;
+
+	@media screen and (min-width:480px) {
+		flex-direction: row;
+		
+	     
+	}
+	
+}
+
+.form__input--rev{
+	margin-bottom: 15px;
+	@media screen and (min-width:480px) {
+		margin-bottom: 0px;
+		margin-right: 10px;
+	     
+	}
+	
+}
+
+.form__btn--rev{
+	min-width: 190px;
+	border-radius: 25px;
+	background-color: transparent;
+	border: 1px solid var(--btnColor);
+	padding: 5px 10px 5px 10px;
+	 
+	@include font (17px, 400, var(--textColor));
+
+	&:hover,
+	&:focus {
+	  background-color: transparent;
+	  color: var(--accent);
+	  border-color: var(--accent);
+	}
+}
+
+.form__label--elRev{
+	display: inline-block;
+	margin-bottom: 10px;
+}

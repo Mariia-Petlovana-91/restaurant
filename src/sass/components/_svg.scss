@@ -1,0 +1,9 @@
+.svg{
+	width: 30px;
+	height: 18px;
+	fill: var(--btnColor);
+
+	&:hover, &:focus{
+		fill: var(--accent);
+	}
+}

@@ -1,0 +1,28 @@
+<div class="backdrop container is-hidden">
+	<div class="modal">
+		<button class="madal__btn" type="button">
+			<svg class="svg">
+				<use href="./src/images/sprite.svg#icon-close-menu"></use>
+			</svg>
+		</button>
+		<form class="form" name="revievs">
+
+			<div class="form__el--rev">
+				<input class="form__input form__input--rev" autofocus type="text" name="name"
+					pattern="[A-Za-zА-Яа-я ]{100}+" title="Petro Petrenko" placeholder="Input your name">
+
+				<button class="form__btn--rev" type="button">ADD PHOTO</button>
+			</div>
+			<label class="form__label">
+				<span class="form__label--elRev">
+					<svg class="svg">
+						<use href="./src/images/sprite.svg#icon-comment"></use>
+					</svg>
+					Leave your reviews:
+				</span>
+				<textarea class="form__comment" name="comment" placeholder="Enter text"></textarea>
+			</label>
+			<button class="btn" type="submit">SEND</button>
+		</form>
+	</div>
+</div>
